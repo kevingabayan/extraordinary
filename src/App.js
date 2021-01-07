@@ -1,5 +1,5 @@
 import './App.css';
-import { Navbar, Container, Col } from 'react-bootstrap';
+import { Container, Col, Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -10,22 +10,22 @@ function App() {
         <Col sm={8}>
         <Navbar.Text className="App-nav text-center">kgabayan@cs.stonybrook.edu</Navbar.Text>
         </Col>
-        <Navbar.Text className="App-nav text-center">Extraordinary</Navbar.Text>
-        <Navbar.Text className="App-nav text-center">The Only Thing</Navbar.Text>
-        <Navbar.Text className="App-nav text-center">Road Trip</Navbar.Text>
+        <Nav.Link href="#eo" className="App-nav text-center">Extraordinary</Nav.Link>
+        <Nav.Link href="#tot" className="App-nav text-center">The Only Thing</Nav.Link>
+        <Nav.Link href="#rt" className="App-nav text-center">Road Trip</Nav.Link>
         </Container>
       </Navbar>
-        <header className="App-header">
+        <header id="eo" className="App-header">
           <p>
             Extraordinary
           </p>
         </header>
-        <header className="App-header">
+        <header id="tot" className="App-header">
           <p>
             The Only Thing
           </p>
         </header>
-        <header className="App-header">
+        <header id="rt" className="App-header">
           <p>
             Road Trip
           </p>
