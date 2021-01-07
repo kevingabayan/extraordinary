@@ -1,4 +1,7 @@
 .App {
+  min-height: 100vh;
+  color: #F3BC2E;
+  background-color: #9C2706;
   font-family: Rochestar Demo;
   src: url("D:\Users\kkgbyn\Documents\Computer Science\passion projects\extraordinary\extraordinary\src\Rochestar Demo.otf") format("opentype");
 }
@@ -9,8 +12,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #9C2706;
-  color: #F3BC2E;
   font-size: calc(50px + 2vmin);
 }
 

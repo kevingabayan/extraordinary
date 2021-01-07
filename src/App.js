@@ -1,5 +1,5 @@
 import './App.css';
-import { Container, Col, Navbar, Nav } from 'react-bootstrap';
+import { Container, Col, Navbar, Nav, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -15,21 +15,56 @@ function App() {
         <Nav.Link href="#rt" className="App-nav text-center">Road Trip</Nav.Link>
         </Container>
       </Navbar>
-        <header id="eo" className="App-header">
-          <p>
-            Extraordinary
-          </p>
-        </header>
-        <header id="tot" className="App-header">
-          <p>
-            The Only Thing
-          </p>
-        </header>
-        <header id="rt" className="App-header">
-          <p>
-            Road Trip
-          </p>
-        </header>
+      <Container fluid>
+        <Row>
+          <Col>
+            <header id="eo" className="App-header">
+              <p>
+                Extraordinary [prod. Jeff kaale]
+              </p>
+            </header>
+          </Col>
+          <Col>
+            <header className="App-header">
+              <p>
+                Tick, Tock, Tick, Tock...
+              </p>
+            </header>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <header id="tot" className="App-header">
+              <p>
+                The Only Thing [prod. Gyvus]
+              </p>
+            </header>
+          </Col>
+          <Col>
+            <header id="tot" className="App-header">
+              <p>
+                Forever, Ever?
+              </p>
+            </header>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <header id="rt" className="App-header">
+              <p>
+                Road Trip [prod. Joakim Karud]
+              </p>
+          </header>
+          </Col>
+          <Col>
+            <header id="rt" className="App-header">
+              <p>
+                1, 2, 3, 4...
+              </p>
+            </header>
+          </Col>
+        </Row>
+        </Container>
     </div>
   );
 }
