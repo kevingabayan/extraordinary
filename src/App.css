@@ -19,3 +19,14 @@
   font-size: calc(15px + 2vmin);
   color: black;
 }
+
+.Audio-player {
+  background-color: #9C2706 !important;
+  position: sticky !important;
+  bottom: 0 !important;
+}
+
+.rhap_time {
+  color: #F3BC2E !important;
+  font-size: 50px !important;
+}

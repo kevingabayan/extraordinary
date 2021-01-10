@@ -1,6 +1,11 @@
 import './App.css';
 import { Container, Col, Navbar, Nav, Row } from 'react-bootstrap';
+import AudioPlayer from "react-h5-audio-player";
+import eo from './Extraordinary.wav';
+import tot from './The Only Thing.wav';
+import rt from './Road Trip.wav';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-h5-audio-player/lib/styles.css';
 
 function App() {
   return (
@@ -20,7 +25,7 @@ function App() {
           <Col>
             <header id="eo" className="App-header">
               <p>
-                Extraordinary [prod. Jeff kaale]
+                Extraordinary <span>[prod. Jeff kaale]</span> 
               </p>
             </header>
           </Col>
@@ -31,6 +36,7 @@ function App() {
               </p>
             </header>
           </Col>
+        <AudioPlayer autoPlay="true" className="Audio-player" src={eo}/>
         </Row>
         <Row>
           <Col>
@@ -47,6 +53,7 @@ function App() {
               </p>
             </header>
           </Col>
+        <AudioPlayer className="Audio-player" src={tot}/>
         </Row>
         <Row>
           <Col>
@@ -63,6 +70,7 @@ function App() {
               </p>
             </header>
           </Col>
+        <AudioPlayer className="Audio-player" src={rt}/>
         </Row>
         </Container>
     </div>
